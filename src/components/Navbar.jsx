@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { PiMoonFill } from "react-icons/pi";
-import { IoSunny } from "react-icons/io5";
+import { PiMoonFill,PiSunFill } from "react-icons/pi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 
@@ -146,9 +145,9 @@ const Navbar = () => {
             <li className="transition-all motion-reduce:transition-none duration-500 delay-[250ms] translate-y-0 opacity-1">
               <button className="block py-2 " onClick={handleThemeSwitch}>
                 {theme === "light" ? (
-                  <IoSunny className="h-7 w-7 text-slate-300 hover:text-[#4305ba]" />
+                  <PiSunFill className="h-7 w-7 text-[#FDB813] hover:text-[#4305ba]" />
                 ) : (
-                  <PiMoonFill className="h-7 w-7 text-slate-300 hover:text-[#4305ba]" />
+                  <PiMoonFill className="h-7 w-7 text-slate-300 hover:text-[#FDB813]" />
                 )}
               </button>
             </li>
@@ -211,6 +210,18 @@ const Navbar = () => {
             </a>
           </li>
           <li>
+            <div className="block w-full py-5 text-center">
+            <button className="block py-2 flex " onClick={handleThemeSwitch}>
+                {theme === "light" ? (
+                  <PiSunFill className="h-7 w-7 mr-3 text-[#FDB813] hover:text-[#4305ba]" />
+                ) : (
+                  <PiMoonFill className="h-7 w-7 mr-3 text-slate-300 hover:text-[#FDB813]" />
+                )} 
+                Toggle Theme
+              </button>
+            </div>
+          </li>
+          <li>
             <a
               href="https://drive.google.com/file/d/1b5jPSJ2k1KBlUHDVlsel-fG5oa58tf83/view?usp=sharing"
               target="_blank"
@@ -221,20 +232,9 @@ const Navbar = () => {
               </button>
             </a>
           </li>
-          <li>
-            <div className="block w-full py-2 mt-5 text-center">
-              <button className="block py-2" onClick={handleThemeSwitch}>
-                {theme === "light" ? (
-                  <IoSunny className="h-7 w-7 text-slate-300 hover:text-[#4305ba]" />
-                ) : (
-                  <PiMoonFill className="h-7 w-7 text-slate-400 hover:text-[#4305ba]" />
-                )}
-              </button>
-            </div>
-          </li>
         </ul>
       </div>
-      {/* Big screen Nav */}
+      {/* Small screen Nav */}
     </nav>
   );
 };
