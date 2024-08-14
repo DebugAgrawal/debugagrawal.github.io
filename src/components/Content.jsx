@@ -8,7 +8,7 @@ import AdminPanel from "../assets/images/AdminPanel.png";
 import MyInfo from "./MyInfo";
 import { motion } from "framer-motion";
 import { techStack } from "../utils/constants";
-import { FaGithub, FaTelegram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { LuExternalLink } from "react-icons/lu";
 // import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
@@ -22,13 +22,15 @@ const Content = () => {
           className="min-h-[calc(100vh*0.80)] flex mb-52 justify-center"
           id="about"
         >
-          <div className="flex flex-col items-center m-auto space-x-0 space-y-7 md:space-y-0 md:space-x-7 lg:flex-row">
+          <div className="flex flex-col items-center m-auto pt-10 space-x-0 space-y-7 md:space-y-0 md:space-x-7 lg:flex-row">
             <img
               className="w-64 md:mb-6 h-64 md:w-96 md:h-96 lg:w-96 lg:h-96 rounded-full shadow-inner transition-all motion-reduce:transition-none duration-500 delay-[400ms] translate-y-0 opacity-1 object-cover"
               src={Image}
               alt="Your Image"
             />
-            <MyInfo />
+            <div className="pt-6">
+              <MyInfo />
+            </div>
           </div>
         </section>
         {/* End of profile section */}
@@ -113,10 +115,10 @@ const Content = () => {
                   React, Javascript ,Redux, Agile, Docker
                 </p>
               </div>
-              <div className="order-first pb-4 lg:pb-0 lg:order-none lg:block">
+              <div className="order-first pb-8 lg:pb-0 lg:order-none lg:block">
                 <img
                   src={Infy}
-                  className="mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105"
+                  className="transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105"
                   loading="lazy"
                   alt="asmi"
                 />
@@ -181,14 +183,14 @@ const Content = () => {
                   </a>
                 </div>
               </div>
-              <div className="order-first pb-4 lg:pb-0 lg:order-none lg:block">
+              <div className="order-first pb-8 lg:pb-0 lg:order-none lg:block">
                 <a
                   href="https://devpost.com/software/sociomark"
                   target="_blank"
                 >
                   <img
                     src={SocioMark}
-                    className="mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105"
+                    className="transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105"
                     loading="lazy"
                     alt="asmi"
                   />
@@ -197,14 +199,14 @@ const Content = () => {
             </div>
 
             <div className="flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1">
-              <div className="order-first pb-4 lg:pb-0 lg:order-none lg:block">
+              <div className="order-first pb-8 lg:pb-0 lg:order-none lg:block">
                 <a
                   href="https://debugagrawal.itch.io/olafs-adventure/"
                   target="_blank"
                 >
                   <img
                     src={OlafsAdventure}
-                    className="mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105"
+                    className="transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105"
                     loading="lazy"
                     alt="Ecommerce"
                   />
@@ -295,14 +297,14 @@ const Content = () => {
                   </a>
                 </div>
               </div>
-              <div className="order-first pb-4 lg:pb-0 lg:order-none lg:block">
+              <div className="order-first pb-8 lg:pb-0 lg:order-none lg:block">
                 <a
                   href="https://debugagrawal.github.io/AdminPanel-MahFin/"
                   target="_blank"
                 >
                   <img
                     src={AdminPanel}
-                    className="mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105"
+                    className="transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105"
                     loading="lazy"
                     alt="Mindfaqt"
                   />
@@ -321,7 +323,7 @@ const Content = () => {
         {/* Projects */}
 
         {/* Contact */}
-        <section className="flex flex-col w-full min-h-screen" id="contact">
+        <section className="flex flex-col mt-24 w-full min-h-screen" id="contact">
           <div className="relative flex items-center py-5 transition-all duration-500 translate-y-0 opacity-1 blur-0 motion-reduce:transition-none">
             <div className="flex-grow border-t border-black dark:border-white border-1"></div>
             <h1 className="px-5 text-3xl font-bold">📭 Contact</h1>
@@ -339,8 +341,12 @@ const Content = () => {
               </p>
               <p className="text-slate-500 dark:text-slate-300">
                 For further enquiries regarding collaborations / consulting /
-                freelance feel free to drop a {" "}
-                <a href="https://t.me/debugagrawal" target="_blank" className=" text-slate-500 text-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
+                freelance feel free to drop a{" "}
+                <a
+                  href="https://t.me/debugagrawal"
+                  target="_blank"
+                  className=" text-slate-500 text-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent"
+                >
                   DM over Telegram.
                 </a>
                 <br />
