@@ -129,7 +129,7 @@ const Content = () => {
         {/* Experience */}
 
         {/* Projects */}
-        <section className="w-full min-h-screen" id="projects">
+        <section className="w-full mt-24 min-h-screen" id="projects">
           <div className="relative flex items-center py-5 transition-all duration-500 translate-y-0 opacity-1 blur-0 motion-reduce:transition-none">
             <h1 className="pr-2 text-3xl font-bold sm:pr-5">💻 Projects</h1>
             <div className="flex-grow border-t border-black dark:border-white border-1"></div>
