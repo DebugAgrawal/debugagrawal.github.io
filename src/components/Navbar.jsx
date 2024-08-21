@@ -134,7 +134,7 @@ const Navbar = () => {
             </li>
             <li className="transition-all motion-reduce:transition-none duration-500 delay-[250ms] translate-y-0 opacity-1">
               <a
-                href="https://drive.google.com/file/d/1b5jPSJ2k1KBlUHDVlsel-fG5oa58tf83/view?usp=sharing"
+                href="https://drive.google.com/file/d/1WueBN39gWEGLNCYs2o7nNOR2sRfVD-SO/view?usp=sharing"
                 target="_blank"
               >
                 <button className="block px-6 py-2 transition duration-300 ease-in-out bg-transparent border shadow-sm border-button-color shadow-button-color text-button-color hover:bg-button-color hover:text-white hover:dark:text-slate-300 focus:bg-button-color focus:text-white active:bg-button-color active:text-white">
@@ -211,7 +211,7 @@ const Navbar = () => {
           </li>
           <li>
             <div className="block w-full py-5 text-center">
-            <button className="block py-2 flex " onClick={handleThemeSwitch}>
+            <button className="py-2 flex " onClick={handleThemeSwitch}>
                 {theme === "light" ? (
                   <PiSunFill className="h-7 w-7 mr-3 text-[#FDB813] hover:text-[#4305ba]" />
                 ) : (
@@ -223,7 +223,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1b5jPSJ2k1KBlUHDVlsel-fG5oa58tf83/view?usp=sharing"
+              href="https://drive.google.com/file/d/1WueBN39gWEGLNCYs2o7nNOR2sRfVD-SO/view?usp=sharing"
               target="_blank"
               onClick={()=>{setIsNavOpen(false)}}            
             >
