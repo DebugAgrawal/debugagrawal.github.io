@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 import { techStack } from "../utils/constants";
 import { FaGithub } from "react-icons/fa";
 import { LuExternalLink } from "react-icons/lu";
-import { CgMouse  } from "react-icons/cg";
+import { CgMouse } from "react-icons/cg";
 
 // import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
@@ -33,8 +33,12 @@ const Content = () => {
             <div className="pt-3">
               <MyInfo />
             </div>
-            <CgMouse  className="animate-bounce 1s h-6 w-6 m-3 "
-              viewBox="0 0 24 24" />
+            <a href="#skills" className="md:hidden">
+              <CgMouse
+                className="animate-bounce 1s h-6 w-6 "
+                viewBox="0 0 24 24"
+              />
+            </a>
           </div>
         </section>
         {/* End of profile section */}
